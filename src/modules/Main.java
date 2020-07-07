@@ -59,6 +59,12 @@ public class Main
         pretzel.buySnacks(1);
         System.out.println("Quantity of " + pretzel.getName() + " is " + pretzel.getQuantity());
 
+        //[ ] Customer 2 (Bob) buys 2 of snack 4 (Soda).
+        cus2.subAmount(soda.costForAmount(2));
+        System.out.println(cus2.getFname() + " cash on hand " + cus2.getCashOnHand());
+        soda.buySnacks(2);
+        System.out.println("Quantity of " + soda.getName() + " is " + soda.getQuantity());
+
 
 
 		
