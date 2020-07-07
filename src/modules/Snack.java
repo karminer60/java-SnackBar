@@ -55,6 +55,22 @@ public class Snack
 	{
 		return quantity;
 	}
+
+    
+
+    public void buySnacks(int cashOnHand)
+	{
+		this.cashOnHand = cash;
+	}
+
+    public void addQuantity(int quantity)
+	{
+		this.quanity = quantity;
+	}
+    public void addQuantities(int quantity)
+	{
+		this.quanity = quantity;
+	}
 }
 
 

@@ -45,7 +45,12 @@ public class Customer
 		this.cashOnHand = cashOnHand;
 	}
 
-	public void addAmount(int amount)
+	public void addAmount(int cashOnHand)
+	{
+		this.cashOnHand + cash;
+	}
+
+	public void buySnacks(int amount)
 	{
 		this.cashOnHand + cash;
 	}

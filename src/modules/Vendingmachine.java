@@ -7,12 +7,12 @@ public class Vendingmachine
 	private String name;
 	
 
-	public Company(String name, int id)
+	public Company(String name)
 	{
 		maxId++;
 		id = maxId;
 		this.name = name;
-		this.debt = debt;
+		
 	}
 
     public int getId(int id)
@@ -30,11 +30,7 @@ public class Vendingmachine
 		return name;
 	}
 
-	@Override
-	public String toString()
-	{
-		return "Company: " + name + "debt" + 100;
-	}
+	
 }
 
 //Vending machine has fields (so knows)
