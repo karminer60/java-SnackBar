@@ -7,7 +7,7 @@ public class Customer
 	private String fname;
 	private int amount;
 
-	public Employee(String fname, int cashOnHnad, int customerId)
+	public Customer(String fname, int cashOnHand)
 	{
 		maxId++;
 		id =maxId;
@@ -17,15 +17,12 @@ public class Customer
 		this.cashOnHand = cashOnHand;
 	}
 
-	public int getCostumerId( int customerId)
+	public int getId( )
 	{
-		return costumerId;
+		return id;
 	}
 
-	public void setCostumerId(int companyId)
-	{
-		this.companyId = costumerId;
-	}
+
 
  	public String getFname(String fname)
 	{
@@ -46,6 +43,11 @@ public class Customer
 	public void setAmount(int amount)
 	{
 		this.cashOnHand = cashOnHand;
+	}
+
+	public void addAmount(int amount)
+	{
+		this.cashOnHand + cash;
 	}
 }
 

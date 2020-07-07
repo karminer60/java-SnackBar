@@ -5,9 +5,12 @@ public class Snack
 	private static int maxId = 0;
 
 	private int id;
+    private int VendingmachineId;
 	private String name;
+    private int cost;
+    private int quantity; 
 
-	public Snack(String name)
+	public Snack(int id, int VendingmachineId, String name, int cost, int quantity)
 	{
 		maxId++;
 		id = maxId;
@@ -55,7 +58,11 @@ public class Snack
 }
 
 
-
+* id - automatically generated field
+* name
+* quantity
+* cost
+* vending machine id
 //add quantity when given how many to add
 //buy snack when given how many to buy
 //get total cost given a quantity

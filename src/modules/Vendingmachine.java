@@ -3,9 +3,9 @@ package modules;
 public class Vendingmachine
 {
 	private static int maxId = 0;
-	public int id;
-	public String name;
-	public int debt;
+	private int id;
+	private String name;
+	
 
 	public Company(String name, int id)
 	{
