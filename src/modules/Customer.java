@@ -3,7 +3,8 @@ package modules;
 public class Customer
 {
 	//fields - things that the class knows
-	
+	private static int maxId = 0;
+	private int id;
 	private String fname;
 	private int amount;
 
@@ -40,19 +41,15 @@ public class Customer
 		return cashOnHand;
 	}
 
-	public void setAmount(int amount)
+
+	public void addAmount( int cash)
 	{
-		this.cashOnHand = cashOnHand;
+		this.cashOnHand += cash;
 	}
 
-	public void addAmount(int cashOnHand)
+	public void subAmount(int cash)
 	{
-		this.cashOnHand + cash;
-	}
-
-	public void buySnacks(int amount)
-	{
-		this.cashOnHand + cash;
+		this.cashOnHand -= cash;
 	}
 }
 

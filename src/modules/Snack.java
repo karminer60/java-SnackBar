@@ -58,27 +58,27 @@ public class Snack
 
     
 
-    public void buySnacks(int cashOnHand)
+    public void buySnacks(int amountBought)
 	{
-		this.cashOnHand = cash;
+		this.quantity -= amountBought;
 	}
 
-    public void addQuantity(int quantity)
+    public void addQuantity(int amount)
 	{
-		this.quanity = quantity;
+		this.quanity  += amount;
 	}
-    public void addQuantities(int quantity)
+    public int costForAmount(int amount )
 	{
-		this.quanity = quantity;
+		return this.cost *  amount;
 	}
 }
 
 
-* id - automatically generated field
-* name
-* quantity
-* cost
-* vending machine id
+//* id - automatically generated field
+//* name
+//* quantity
+//* cost
+//* vending machine id
 //add quantity when given how many to add
 //buy snack when given how many to buy
 //get total cost given a quantity

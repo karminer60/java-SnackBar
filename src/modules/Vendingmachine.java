@@ -7,7 +7,7 @@ public class Vendingmachine
 	private String name;
 	
 
-	public Company(String name)
+	public Vendingmachine(String name)
 	{
 		maxId++;
 		id = maxId;
