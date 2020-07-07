@@ -26,7 +26,7 @@ public class Customer
 
 
 
- 	public String getFname(String fname)
+ 	public String getFname()
 	{
 		return fname;
 	}  

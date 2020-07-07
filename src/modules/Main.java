@@ -28,15 +28,33 @@ public class Main
 		Snack water = new Snack(drink.getId(),"water",2.75, 20);
 
         //processing
-        System.out.println(c1);
-		emp1.setSalary(emp1.getSalary() + 500)
-		System.out.println(emp1.getFname() + " " + emp1.getSalary());
+       
+        // [ ] Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
+        //[ ] Print Customer 1 (Jane) Cash on hand.
+        //[ ] Print quantity of snack 3 (Pretzel).
+        //[ ] Customer 2 (Bob) buys 2 of snack 4 (Soda).
+        //[ ] Print Customer 2 (Bob) Cash on Hand.
+        //[ ] Print quantity of snack 4 (Soda).
+        //[ ] Customer 1 (Jane) finds $10.
+        //[ ] Print Customer 1 (Jane) Cash on Hand.
+        //[ ] Customer 1 (Jane) buys 1 of snack 2 (Chocolate Bar).
+        //[ ] Print Customer 1 (Jane) Cash on Hand.
+        // [ ] Print quantity of snack 2 (Chocolate Bar).
+        //[ ] Add 12 more items to snack 3 (Pretzel).
+        //[ ] Print quantity of snack 3 (Pretzel).
+        //[ ] Customer 2 (Bob) buys 3 of snack 3 (Pretzel).
+        //[ ] Print Customer 2 (Bob) Cash on hand.
+        //[ ] Print quantity of snack 3 (Pretzel).
+        
 
-		System.out.println(c1.debt / 7);
-		System.out.println(c1.debt % 7);
-		System.out.println(c1.debt / 7.0);
+         // [ ] Customer 1 (Jane) buys 3 of snack 4 (Soda).
+		cus1.subAmount(soda.costForAmount(3));
+		System.out.println(cus1.getFname() + " cash on hand " + cus1.getCashOnHand());
+        soda.buySnacks(3);
+        System.out.println("Quantity of " + soda.getName() + " is " + soda.getQuantity());
 
-		double result = (double) c1.debt / 14;
+        // [ ] Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
+
 
 
 		

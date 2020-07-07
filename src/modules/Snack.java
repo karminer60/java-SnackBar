@@ -60,7 +60,6 @@ public class Snack
 	}
 
     
-
     public void buySnacks(int amountBought)
 	{
 		this.quantity -= amountBought;
