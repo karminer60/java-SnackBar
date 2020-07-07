@@ -15,19 +15,19 @@ public class Vendingmachine
 		
 	}
 
-    public int getId(int id)
+    public int getId()
 	{
 		return id;
 	}
 
-    public String getName(String name)
+    public String getName()
 	{
 		return name;
 	}
 
-    public String setName(String name)
+    public void setName(String name)
 	{
-		return name;
+		this.name = name;
 	}
 
 	
