@@ -5,16 +5,19 @@ public class Snack
 	private static int maxId = 0;
 
 	private int id;
-    private int VendingmachineId;
+    private int vendingmachineId;
 	private String name;
-    private int cost;
+    private double cost;
     private int quantity; 
 
-	public Snack(int id, int VendingmachineId, String name, int cost, int quantity)
+	public Snack(int vendingmachineId, String name, double cost, int quantity)
 	{
 		maxId++;
 		id = maxId;
 		this.name = name;
+        this.vendingmachineId = vendingmachineId;
+        this.cost = cost;
+        this.quantity = quantity;
 	}
 
 	public int getId()
@@ -23,12 +26,12 @@ public class Snack
 	}
       public int getVendingmachineId()
 	{
-		return VendingmachineId;
+		return vendingmachineId;
 	}
 
-	public int setgetVendingmachineId()
+	public void setVendingmachineId(int vendingmachineId)
 	{
-		return VendingmachineId;
+		this.vendingmachineId = vendingmachineId;
 	}
 
 	public String getName()
@@ -36,19 +39,19 @@ public class Snack
 		return name;
 	}
 
-    public String setName()
+    public void setName(String name)
 	{
-		return name;
+		this.name = name;
 	}
 
-    public int getCost()
+    public double getCost()
 	{
 		return cost;
 	}
 
-	public int setCost()
+	public void setCost(double cost)
 	{
-		return cost;
+		this.cost = cost;
 	}
 
     public int getQuantity()
@@ -65,9 +68,9 @@ public class Snack
 
     public void addQuantity(int amount)
 	{
-		this.quanity  += amount;
+		this.quantity  += amount;
 	}
-    public int costForAmount(int amount )
+    public double costForAmount(int amount )
 	{
 		return this.cost *  amount;
 	}

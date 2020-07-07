@@ -7,8 +7,9 @@ public class Customer
 	private int id;
 	private String fname;
 	private int amount;
+	private double cashOnHand;
 
-	public Customer(String fname, int cashOnHand)
+	public Customer(String fname, double cashOnHand)
 	{
 		maxId++;
 		id =maxId;
@@ -36,18 +37,18 @@ public class Customer
 		//this-the fields that we are dealing with 
 	} 
 
-	public int getCashOnHand(int cashOnHand)
+	public double getCashOnHand()
 	{
 		return cashOnHand;
 	}
 
 
-	public void addAmount( int cash)
+	public void addAmount( double cash)
 	{
 		this.cashOnHand += cash;
 	}
 
-	public void subAmount(int cash)
+	public void subAmount(double cash)
 	{
 		this.cashOnHand -= cash;
 	}
