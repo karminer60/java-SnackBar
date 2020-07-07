@@ -29,9 +29,9 @@ public class Main
 
         //processing
        
-        // [ ] Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
-        //[ ] Print Customer 1 (Jane) Cash on hand.
-        //[ ] Print quantity of snack 3 (Pretzel).
+        
+       
+        
         //[ ] Customer 2 (Bob) buys 2 of snack 4 (Soda).
         //[ ] Print Customer 2 (Bob) Cash on Hand.
         //[ ] Print quantity of snack 4 (Soda).
@@ -54,6 +54,10 @@ public class Main
         System.out.println("Quantity of " + soda.getName() + " is " + soda.getQuantity());
 
         // [ ] Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
+        cus1.subAmount(pretzel.costForAmount(1));
+        System.out.println(cus1.getFname() + " cash on hand " + cus1.getCashOnHand());
+        pretzel.buySnacks(1);
+        System.out.println("Quantity of " + pretzel.getName() + " is " + pretzel.getQuantity());
 
 
 
